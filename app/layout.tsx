@@ -9,10 +9,12 @@ export interface RootLayoutProps extends HtmlHTMLAttributes<HTMLHtmlElement> {
   readonly children?: ReactNode;
 }
 
-export const RootLayout = ({ children, lang = "pt-br" }: RootLayoutProps) => {
+const RootLayout = ({ children, lang = "pt-br" }: RootLayoutProps) => {
   return (
     <html lang={lang}>
       <body>{children}</body>
     </html>
   );
 };
+
+export default RootLayout;
