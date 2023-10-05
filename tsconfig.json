@@ -1,26 +1,44 @@
 {
   "compilerOptions": {
+    "allowJs": false,
+    "baseUrl": ".",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
-    "noEmit": true,
-    "incremental": true,
-    "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {
+      "@/google-sign-in/data-access": ["./libs/google-sign-in/data-access/src/lib/index.ts"]
+    },
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "resolveJsonModule": true,
+    "rootDir": ".",
+    "skipDefaultLibCheck": false,
+    "skipLibCheck": false,
+    "strict": true,
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
@@ -29,6 +47,9 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "data",
+    "dist",
+    "node_modules",
+    "tmp"
   ]
 }
