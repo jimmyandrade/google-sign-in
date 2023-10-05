@@ -7,17 +7,40 @@
     "indent": ["error", 2],
     "object-curly-spacing": "off",
     "one-var": "off",
+    "max-lines-per-function": "off",
     "prettier/prettier": "error",
     "quote-props": ["error", "as-needed"],
     "react/function-component-definition": ["error", { "namedComponents": "arrow-function" }],
     "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+    "react/jsx-no-bind": ["error", { "allowArrowFunctions": true }],
+    "react/jsx-no-literals": "off",
     "react/react-in-jsx-scope": "off"
   },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
       "rules": {
-        "react/require-default-props": ["off"]
+        "no-unused-vars": "off",
+        "react/require-default-props": "off"
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "rules": {
+      }
+    },
+    {
+      "files": ["*.d.ts"],
+      "rules": {
+        
+      }
+    },
+    {
+      "files": ["next-env.d.ts"],
+      "rules": {
+        "capitalized-comments": "off",
+        "multiline-comment-style": "off",
+        "spaced-comment": "off"
       }
     }
   ]
